@@ -1,0 +1,65 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckoutApp.View.WecomePage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Welcome User!"
+               Padding="60"
+               FontSize="40"
+               BackgroundColor="#F95700"
+               TextColor="White"
+               HorizontalOptions="CenterAndExpand" 
+               FontAttributes="Bold" 
+               HorizontalTextAlignment="Center"/>
+            <Label Text="My Store"
+               FontSize="18"
+               BackgroundColor="#F95700"
+               TextColor="White"
+               HorizontalTextAlignment="Center " 
+               FontAttributes="Bold" 
+               />
+            <Grid VerticalOptions="EndAndExpand"
+                  Margin="5">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+                <Button Text="Scanner"
+                        Clicked="Button_Clicked"
+                        BackgroundColor="#F95700"
+                        FontAttributes="Bold"
+                        TextColor="White" 
+                        CornerRadius="25"
+                        FontSize="15"/>
+                <Button Grid.Column="1"
+                        Text="History"
+                        Clicked="Button_Clicked_1"
+                        BackgroundColor="#F95700"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        FontSize="15"/>
+                <Button Grid.Column="2"
+                        Text="Search"
+                        Clicked="Button_Clicked_2"
+                        BackgroundColor="#F95700"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        FontSize="15"/>
+                <Button Grid.Column="3"
+                        Text="Account"
+                        Clicked="Button_Clicked_3"
+                        BackgroundColor="#F95700"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        CornerRadius="25"
+                        FontSize="15"/>
+
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

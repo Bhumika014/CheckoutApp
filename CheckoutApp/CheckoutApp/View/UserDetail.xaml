@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckoutApp.View.UserDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="MainImage"
+                   Source="user1.png"
+                   WidthRequest="200"
+                   HeightRequest="250"
+                  />
+
+            <Label x:Name="PathLabel"
+                   FontSize="14"
+                   TextColor="Black"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            <Button Text="Take Photo"
+                    FontSize="20"
+                    BackgroundColor="#F95700"
+                    TextColor="White"
+                    FontAttributes="Bold"
+                    Clicked="TakePhotoButton_Clicked"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"
+                    />
+
+            <Button Grid.Column="1"
+                    Text="Pick Photo "
+                    FontSize="20"
+                    BackgroundColor="#F95700"
+                    TextColor="White"
+                    Clicked="PickPhotoButton_Clicked" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"/>
+            </Grid>
+
+            <Label Text="Payment Method"
+                   x:Name="PaymentClick"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   BackgroundColor="#F95700"/>
+            <Label Text="Settings"
+                   x:Name="SettingsClick"
+                   FontSize="30"
+                   Margin="5"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   BackgroundColor="#F95700"/>
+            <Label Text="Help and Support"
+                   x:Name="HelpClick"
+                   FontSize="30"
+                   Margin="5"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   BackgroundColor="#F95700"/>
+            <Label Text="FAQ's"
+                   x:Name="FaqClick"
+                   FontSize="30"
+                   Margin="5"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   BackgroundColor="#F95700"/>
+
+            <Button x:Name="Btn_Logout" 
+                    Text="Logout"
+                    TextColor="White"
+                    BackgroundColor="#F95700" 
+                    CornerRadius="18" 
+                    Clicked="Handle_Clicked"
+                    FontSize="25" 
+                    FontAttributes="Bold" 
+                    VerticalOptions="EndAndExpand"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

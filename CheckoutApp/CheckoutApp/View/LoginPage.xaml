@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckoutApp.View.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+             <StackLayout CascadeInputTransparent="True">
+                <Frame CornerRadius="60" Margin="80,40,80,20" Padding="20">
+                    <Image Source="img1.gif" VerticalOptions="EndAndExpand" Visual="Default" />
+                </Frame>
+                <Entry x:Name="EntryUsername" Placeholder="Username"  FontSize="25" VerticalOptions="EndAndExpand" />
+                <Entry x:Name="EntryPassword" Placeholder="Password" FontSize="25" VerticalOptions="StartAndExpand" IsPassword="True"/>
+                <Button x:Name="Btn_Login" 
+                    Text="Login"
+                    TextColor="White"
+                    BackgroundColor="#F95700" 
+                    CornerRadius="18" 
+                    Clicked="Btn_Login_Clicked"
+                    FontSize="25" FontAttributes="Bold" VerticalOptions="StartAndExpand"/>
+                <Button x:Name="Btn_Register" 
+                    Text="Register"
+                    TextColor="White"
+                    Clicked="Handle_Clicked"
+                    BackgroundColor="#F95700" 
+                    CornerRadius="18" 
+                    FontSize="25" FontAttributes="Bold" VerticalOptions="StartAndExpand"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
