@@ -17,5 +17,9 @@ namespace CheckoutApp.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+        void HeplClickFunc()
+        {
+           
+        }
     }
 }

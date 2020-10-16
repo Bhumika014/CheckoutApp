@@ -4,6 +4,38 @@
              x:Class="CheckoutApp.View.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
+            <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="Auto"/>
+                <RowDefinition Height="40"/>
+            </Grid.RowDefinitions>
+            <Label Text="Payment Method"
+                   x:Name="PaymentClick"
+                   FontSize="30"
+                   FontAttributes="Bold"
+                   TextColor="White"
+                   BackgroundColor="#F95700"
+                   Grid.Row="0"/>
+            <Label Text="Settings"
+                   x:Name="SettingsClick"
+                   FontSize="20"
+                    Grid.Row="1"
+                   FontAttributes="Bold"
+                   TextColor="LightGray"
+                   BackgroundColor="White"
+                   />
+            </Grid>
+            <Frame BorderColor="LightGray"
+                   CornerRadius="10"
+                   HasShadow="True"
+                   Padding="10">
+                <Label Text="Example" 
+                       FontSize="20"
+                       TextColor="orange"/>
+            </Frame>
         </StackLayout> 
     </ContentPage.Content>
 </ContentPage>

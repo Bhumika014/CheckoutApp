@@ -1,12 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+#pragma warning disable IDE0005 // Using directive is unnecessary.
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing.Net.Mobile.Forms;
+using System.Data.SQLite;
 
 namespace CheckoutApp.View
 {
@@ -18,6 +16,8 @@ namespace CheckoutApp.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
+        SQLiteConnection myconnection = new SQLiteConnection(@"Data Source= C:\Users\bhumi\OneDrive\Desktop\ComIT\ImageDatabase\ImageTB; 
+                                      version = 3; New = True;");
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var scan = new ZXingScannerPage();
@@ -32,5 +32,6 @@ namespace CheckoutApp.View
             };
 
         }
-    }
+                 
+     }
 }
