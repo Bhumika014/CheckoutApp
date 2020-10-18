@@ -95,9 +95,9 @@ namespace CheckoutApp.View
         {
             SettingsClick.GestureRecognizers.Add(new TapGestureRecognizer()
             {
-                Command = new Command(() =>
+                Command = new Command(async () =>
                 {
-                    DisplayAlert("Hello", "You clicked on setting", "OK");
+                    await Navigation.PushAsync(new SettingsPage());
                 }
                 )
             });

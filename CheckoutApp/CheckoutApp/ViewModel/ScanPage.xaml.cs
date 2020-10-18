@@ -1,10 +1,10 @@
 ﻿using System;
-#pragma warning disable IDE0005 // Using directive is unnecessary.
-
+using System.Data.SQLite;
+using System.Security.Cryptography;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using ZXing.Net.Mobile.Forms;
-using System.Data.SQLite;
+using ZXing.QrCode.Internal;
 
 namespace CheckoutApp.View
 {
@@ -16,8 +16,9 @@ namespace CheckoutApp.View
             InitializeComponent();
             NavigationPage.SetHasNavigationBar(this, false);
         }
-        SQLiteConnection myconnection = new SQLiteConnection(@"Data Source= C:\Users\bhumi\OneDrive\Desktop\ComIT\ImageDatabase\ImageTB; 
-                                      version = 3; New = True;");
+
+        public SQLiteCommand Command { get; private set; }
+
         private async void Button_Clicked(object sender, EventArgs e)
         {
             var scan = new ZXingScannerPage();
@@ -30,6 +31,18 @@ namespace CheckoutApp.View
                     MyList.Text = result.Text;
                 });
             };
+
+            SQLiteConnection myconnection = new SQLiteConnection("Data Source = C:/Users/bhumi/source/repos/CheckoutApp/images.db; version = 3");
+            myconnection.Open();
+            String query ="Select Barcode From ImgTB";
+            myconnection.Open();
+            Command = new SQLiteCommand();
+
+            using (SQLiteDataReader reader = Command.ExecuteReader()) ;
+
+
+
+
 
         }
                  

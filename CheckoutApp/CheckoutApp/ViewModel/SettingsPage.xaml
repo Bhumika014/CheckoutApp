@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckoutApp.View.SettingsPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#FCB560" Padding="10" >
+                <Image Source="OR1.jpg" Visual="Default"  />
+            </Frame>
+            <Grid VerticalOptions="CenterAndExpand" RowSpacing="20"   Margin="10">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <Frame BorderColor="LightGray"
+                   CornerRadius="30"
+                   HasShadow="True"
+                   Padding="10"
+                   Grid.Row="0">
+                    <Label 
+                       Text="Edit Profile"
+                       x:Name="EditProfileClick" 
+                       FontSize="30"
+                       TextColor="#d44c00" />
+                </Frame>
+                <Frame BorderColor="LightGray"
+                   CornerRadius="30"
+                   HasShadow="True"
+                   Padding="10"
+                       Grid.Row="1"
+                       VerticalOptions="Center">
+                    <Label Text="Notification" 
+                           x:Name="NotificationClick"
+                       FontSize="30"
+                       TextColor="#d44c00" />
+                </Frame>
+                <Frame BorderColor="LightGray"
+                   CornerRadius="30"
+                   HasShadow="True"
+                   Padding="10"
+                   Grid.Row="2">
+                    <Label Text="Policies" 
+                           x:Name="PoliciesClick"
+                       FontSize="30"
+                       TextColor="#d44c00"/>
+                </Frame>
+                <Frame BorderColor="LightGray"
+                   CornerRadius="30"
+                   HasShadow="True"
+                   Padding="10"
+                   Grid.Row="3">
+                    <Label Text="Feedback" 
+                           x:Name="FeedbackClick"
+                       FontSize="30"
+                      TextColor="#d44c00"
+                      />
+                </Frame>
+            </Grid>
+        </StackLayout> 
+    </ContentPage.Content>
+</ContentPage>

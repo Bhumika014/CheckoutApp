@@ -26,6 +26,7 @@
                 </StackLayout>
                 <StackLayout Grid.Row="1">
                     <Entry Placeholder="Expiry Date"  FontSize="16" x:Name="EntryExpDate"/>
+                    
                 </StackLayout>
                 <StackLayout Grid.Row="2">
                     <Entry  Placeholder="CVV" FontSize="16" x:Name="Entry"/>

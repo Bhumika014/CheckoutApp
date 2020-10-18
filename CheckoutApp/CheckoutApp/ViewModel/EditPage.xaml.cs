@@ -10,16 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace CheckoutApp.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class SettingsPage : ContentPage
+    public partial class EditPage : ContentPage
     {
-        public SettingsPage()
+        public EditPage()
         {
             InitializeComponent();
-            NavigationPage.SetHasNavigationBar(this, false);
         }
-        void HeplClickFunc()
+
+        private void Btn_Register_Clicked(object sender, EventArgs e)
         {
-           
+
         }
     }
 }

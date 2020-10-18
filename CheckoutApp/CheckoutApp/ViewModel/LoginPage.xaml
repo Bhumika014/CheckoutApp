@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CheckoutApp"
+             x:Class="CheckoutApp.View.LoginPage">
+
+    <ContentPage.Content>
+        <StackLayout>
+             <StackLayout CascadeInputTransparent="True">
+
+                
+                   <Frame  CornerRadius="60" Margin="80,40,80,20" Padding="20">
+                    <Image Source="img1.gif" VerticalOptions="EndAndExpand" Visual="Default" />
+                </Frame>
+                <Grid ColumnSpacing="0" >
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="*"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="120" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Frame  Grid.Column="0" Grid.Row="0" HasShadow="False" >
+                    <Image Source="user1.png" HeightRequest="50"></Image>
+                    </Frame>
+                    <Frame Grid.Column="0" Grid.Row="1" HasShadow="False">
+                        <Image Source="PWD1.jpg"  HeightRequest="50"></Image>
+                    </Frame>
+                    <Entry x:Name="EntryUsername"   Grid.Column="1"   Grid.Row="0" Placeholder="Username"  FontSize="25"  />
+                    <Entry x:Name="EntryPassword" Placeholder="Password" FontSize="25"  IsPassword="True" Grid.Column="1" Grid.Row="1"/>
+                    
+                </Grid>
+                <Button x:Name="Btn_Login" 
+                    Text="Login"
+                    TextColor="#F95700"
+                    BackgroundColor="White"
+                    CornerRadius="30" 
+                    Clicked="Btn_Login_Clicked"
+                    FontSize="25" FontAttributes="Bold" 
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="350" BorderWidth="2" 
+                    BorderColor="#F95700"/>
+                <Button x:Name="Btn_Register" 
+                    Text="Register"
+                    TextColor="#F95700"
+                    Clicked="Handle_Clicked"
+                    BackgroundColor="White" 
+                    CornerRadius="30" 
+                    FontSize="25" 
+                    FontAttributes="Bold" 
+                    VerticalOptions="StartAndExpand"
+                    HorizontalOptions="CenterAndExpand"
+                    WidthRequest="350" 
+                    BorderWidth="2" 
+                    BorderColor="#F95700"/>
+
+
+                <Label Text="&#xf059;" 
+                       FontSize="36" 
+                       HorizontalTextAlignment="End" 
+                       VerticalTextAlignment="End"
+                       TextColor="#F95700">
+            <Label.FontFamily>
+                <OnPlatform x:TypeArguments="x:String" Android="fa-solid-900.ttf#Font Awesome 5 Free Solid" 
+                                                       iOS="Font Awesome 5 Free"/>
+            </Label.FontFamily>
+        </Label>
+                </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
