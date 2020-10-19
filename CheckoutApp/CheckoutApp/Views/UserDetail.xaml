@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CheckoutApp.View.UserDetail">
+    <ContentPage.Content>
+        <StackLayout>
+            <Image x:Name="MainImage"
+                   Source="user1.png"
+                   WidthRequest="150"
+                   HeightRequest="200"
+                  />
+
+            <Label x:Name="PathLabel"
+                   FontSize="14"
+                   TextColor="Black"/>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            <Button Text="Take Photo"
+                    FontSize="20"
+                    BackgroundColor="White"
+                    BorderColor="#F95700"
+                    BorderWidth="3"
+                    TextColor="#F95700"
+                    FontAttributes="Bold"
+                    Clicked="TakePhotoButton_Clicked"
+                    HorizontalOptions="Center"
+                    CornerRadius="20" 
+                    />
+
+            <Button Grid.Column="1"
+                    Text="Pick Photo "
+                    FontSize="20"
+                    BackgroundColor="White"
+                    BorderWidth="3"
+                    BorderColor="#F95700"
+                    TextColor="#F95700"
+                    Clicked="PickPhotoButton_Clicked" 
+                    FontAttributes="Bold"
+                    HorizontalOptions="Center"
+                    CornerRadius="20"/>
+            </Grid>
+            <Grid RowSpacing="-10" VerticalOptions="CenterAndExpand">
+                <Grid.RowDefinitions  >
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                
+                <Frame Grid.Row="0" 
+                      Padding="10" 
+                       Margin="15"
+                       BorderColor="#F95700"
+                       CornerRadius="30">
+                <Label Text="Payment Method"
+                   x:Name="PaymentClick"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   BackgroundColor="White"
+                   TextColor="#F95700"/>
+            </Frame>
+            <Frame Grid.Row="1"
+                   Padding="10" 
+                   Margin="15"
+                   BorderColor="#F95700"
+                   CornerRadius="30">
+            <Label Text="Settings"
+                   x:Name="SettingsClick"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   BackgroundColor="White"
+                   TextColor="#F95700"/>
+            </Frame>
+            <Frame Grid.Row="2"
+                   Padding="10" 
+                   Margin="15"
+                   BorderColor="#F95700"
+                   CornerRadius="30">
+            <Label Text="Help and Support"
+                   x:Name="HelpClick"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   BackgroundColor="White"
+                   TextColor="#F95700"/>
+            </Frame>
+            <Frame Grid.Row="3"
+                    Padding="10" 
+                    Margin="15"
+                    BorderColor="#F95700"
+                    CornerRadius="30">
+            <Label Text="FAQ's"
+                   x:Name="FaqClick"
+                   FontSize="20"
+                   FontAttributes="Bold"
+                   BackgroundColor="White"
+                   TextColor="#F95700"/>
+            </Frame>
+            </Grid>
+
+            <Button x:Name="Btn_Logout" 
+                    Text="Logout"
+                    TextColor="White"
+                    BackgroundColor="#F95700" 
+                    CornerRadius="18" 
+                    Clicked="Handle_Clicked"
+                    FontSize="25" 
+                    FontAttributes="Bold" 
+                    VerticalOptions="EndAndExpand"/>
+
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

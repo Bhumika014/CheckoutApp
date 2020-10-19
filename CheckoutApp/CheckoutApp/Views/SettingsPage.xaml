@@ -4,7 +4,7 @@
              x:Class="CheckoutApp.View.SettingsPage">
     <ContentPage.Content>
         <StackLayout>
-            <Frame BackgroundColor="#FCB560" Padding="10" >
+            <Frame BackgroundColor="#F95700" Padding="10" >
                 <Image Source="OR1.jpg" Visual="Default"  />
             </Frame>
             <Grid VerticalOptions="CenterAndExpand" RowSpacing="20"   Margin="10">
@@ -14,7 +14,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
-                <Frame BorderColor="LightGray"
+                <Frame BorderColor="#F95700"
                    CornerRadius="30"
                    HasShadow="True"
                    Padding="10"
@@ -23,9 +23,9 @@
                        Text="Edit Profile"
                        x:Name="EditProfileClick" 
                        FontSize="30"
-                       TextColor="#d44c00" />
+                       TextColor="#F95700" />
                 </Frame>
-                <Frame BorderColor="LightGray"
+                <Frame BorderColor="#F95700"
                    CornerRadius="30"
                    HasShadow="True"
                    Padding="10"
@@ -34,9 +34,9 @@
                     <Label Text="Notification" 
                            x:Name="NotificationClick"
                        FontSize="30"
-                       TextColor="#d44c00" />
+                       TextColor="#F95700" />
                 </Frame>
-                <Frame BorderColor="LightGray"
+                <Frame BorderColor="#F95700"
                    CornerRadius="30"
                    HasShadow="True"
                    Padding="10"
@@ -44,9 +44,9 @@
                     <Label Text="Policies" 
                            x:Name="PoliciesClick"
                        FontSize="30"
-                       TextColor="#d44c00"/>
+                       TextColor="#F95700"/>
                 </Frame>
-                <Frame BorderColor="LightGray"
+                <Frame BorderColor="#F95700"
                    CornerRadius="30"
                    HasShadow="True"
                    Padding="10"
@@ -54,7 +54,7 @@
                     <Label Text="Feedback" 
                            x:Name="FeedbackClick"
                        FontSize="30"
-                      TextColor="#d44c00"
+                      TextColor="#F95700"
                       />
                 </Frame>
             </Grid>

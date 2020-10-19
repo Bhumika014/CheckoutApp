@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -25,9 +20,9 @@ namespace CheckoutApp.View
         {
             EditProfileClick.GestureRecognizers.Add(new TapGestureRecognizer()
             {
-                Command = new Command(() =>
+                Command = new Command(async () =>
                 {
-                    DisplayAlert("Hello", "You clicked on Edit Profile", "OK");
+                    await Navigation.PushAsync(new EditPage());
                 }
                 )
             });

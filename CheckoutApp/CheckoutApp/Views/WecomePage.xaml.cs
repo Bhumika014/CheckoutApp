@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using CheckoutApp.Views;
+using System;
 
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
@@ -29,9 +26,9 @@ namespace CheckoutApp.View
 
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private async void Button_Clicked_2(object sender, EventArgs e)
         {
-
+            await Navigation.PushAsync(new MyListPage());
         }
 
         private async void Button_Clicked_3(object sender, EventArgs e)

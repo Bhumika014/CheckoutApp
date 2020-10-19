@@ -44,7 +44,7 @@
                 </StackLayout>
             </Grid>
             <Button x:Name="Btn_Register" 
-                    Text="Register"
+                    Text="Save Changes"
                     TextColor="White"
                     Clicked="Btn_Register_Clicked"
                     BackgroundColor="#F95700" 

@@ -4,15 +4,15 @@
              x:Class="CheckoutApp.View.PaymentPage">
     <ContentPage.Content >
         <StackLayout>
-            <Frame BackgroundColor="#E26313" Padding="5" CornerRadius="0">
+            <Frame BackgroundColor="#F95700" Padding="5" CornerRadius="0">
                 <Label Text="Payment" TextColor="White" FontSize="36"/>
             </Frame>
-            <StackLayout>
+            <StackLayout Margin="10">
                 <Image x:Name="CreaditCard"
                        Source="CD1.png"
                       ></Image>
             </StackLayout>
-            <Grid Margin="20,0">
+            <Grid Margin="20">
                 <Grid.RowDefinitions>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
