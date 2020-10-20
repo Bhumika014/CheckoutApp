@@ -1,4 +1,5 @@
 ﻿
+using CheckoutApp.Views;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -32,22 +33,22 @@ namespace CheckoutApp.View
         {
             NotificationClick.GestureRecognizers.Add(new TapGestureRecognizer()
             {
-                Command = new Command(() =>
+                Command = new Command(async () =>
                 {
-                    DisplayAlert("Hello", "You clicked on Policies", "OK");
+                    await Navigation.PushAsync(new Notifications());
                 }
                 )
             });
         }
 
-       
+
         void PoliciesClickFunc()
         {
             PoliciesClick.GestureRecognizers.Add(new TapGestureRecognizer()
             {
-                Command = new Command(() =>
+                Command = new Command(async() =>
                 {
-                    DisplayAlert("Hello", "You clicked on Policies", "OK");
+                    await Navigation.PushAsync(new Policies());
                 }
                 )
             });
